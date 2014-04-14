@@ -4,7 +4,7 @@ use Mouse::Role;
 require qw/post/;
 
 has 'hookReceiver' => (
-    is => 'r',
+    is => 'ro',
     isa => 'Model::HookReceiver'
 );
 

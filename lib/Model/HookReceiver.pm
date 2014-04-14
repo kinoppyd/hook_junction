@@ -4,7 +4,7 @@ use Mouse::Role;
 requires qw/parse toString/;
 
 has 'receivedData' => (
-    is => 'r',
+    is => 'ro',
     isa => 'String'
 );
 
