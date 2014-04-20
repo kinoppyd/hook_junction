@@ -4,8 +4,7 @@ enum 'HOOK_RECEIVER_DATA_TYPE' => qw/JSON XML/;
 no Mouse::Util::TypeConstraints;
 
 use Mouse::Role;
-
-requires qw/parse_json parse_xml/;
+use Mojo::JSON;
 
 has 'receivedData' => (
     is => 'ro',
@@ -33,6 +32,11 @@ sub parse {
         $self->parse_xml();
     }
     $self;
+}
+
+sub post_json {
+    my ($self) = @_;
+    $self->attr( j($self->receivedData) );
 }
 
 1;
