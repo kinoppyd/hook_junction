@@ -9,13 +9,15 @@ use Mojo::JSON;
 has 'receivedData' => (
     is => 'ro',
     isa => 'Str',
-    init_arg => 'received_data'
+    init_arg => 'received_data',
+    required => 1
 );
 
 has 'type' => (
     is => 'ro',
     isa => 'HOOK_RECEIVER_DATA_TYPE',
-    init_arg => 'type'
+    init_arg => 'type',
+    required => 1
 );
 
 has 'attr' => (
