@@ -23,6 +23,11 @@ has 'attr' => (
     isa => 'HashRef',
 );
 
+sub BUILD {
+    my ($self) = @_;
+    parse();
+}
+
 sub parse {
     my ($self) = @_;
 
