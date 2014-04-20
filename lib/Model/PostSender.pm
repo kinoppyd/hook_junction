@@ -1,7 +1,7 @@
 package Model::PostSender;
 use Mouse::Role;
 
-require qw/post/;
+requires qw/post/;
 
 has 'hookReceiver' => (
     is => 'ro',
