@@ -1,4 +1,4 @@
-package Model::HookReceiver::GitHub;
+package Model::HookReceiver::Github;
 use Mouse;
 with qw/HookReceiver/;
 
