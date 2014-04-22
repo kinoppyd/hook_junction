@@ -1,6 +1,5 @@
-package Model::HookReceiver::Github;
-use Mouse;
-with qw/HookReceiver/;
+package Junction::Controller::Github;
+use Mojo::Base 'Mojolicious::Controller';
 
 sub commit_comment {
     my ($self, $arg) = @_;
