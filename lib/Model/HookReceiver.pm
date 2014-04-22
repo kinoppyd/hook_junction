@@ -1,4 +1,4 @@
-package Model::HookReceiver;
+package Junction::Model::HookReceiver;
 use Mouse::Util::TypeConstraints;
 enum 'HOOK_RECEIVER_DATA_TYPE' => qw/JSON XML/;
 no Mouse::Util::TypeConstraints;

@@ -1,4 +1,4 @@
-package User;
+package Junction::Model::User;
 use Mouse;
 
 has access_token => (
