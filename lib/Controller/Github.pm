@@ -2,79 +2,79 @@ package Junction::Controller::Github;
 use Mojo::Base 'Mojolicious::Controller';
 
 sub commit_comment {
-    my ($self, $arg) = @_;
+    my $self = shift;
 }
 
 sub create {
-    my ($self, $arg) = @_;
+    my $self = shift;
 }
 
 sub delete {
-    my ($self, $arg) = @_;
+    my $self = shift;
 }
 
 sub deployment_status {
-    my ($self, $arg) = @_;
+    my $self = shift;
 }
 
 sub deployment {
-    my ($self, $arg) = @_;
+    my $self = shift;
 }
 
 sub fork {
-    my ($self, $arg) = @_;
+    my $self = shift;
 }
 
 sub gollum {
-    my ($self, $arg) = @_;
+    my $self = shift;
 }
 
 sub issue_comment {
-    my ($self, $arg) = @_;
+    my $self = shift;
 }
 
 sub issues {
-    my ($self, $arg) = @_;
+    my $self = shift;
 }
 
 sub member {
-    my ($self, $arg) = @_;
+    my $self = shift;
 }
 
 sub page_build {
-    my ($self, $arg) = @_;
+    my $self = shift;
 }
 
 sub public {
-    my ($self, $arg) = @_;
+    my $self = shift;
 }
 
 sub pull_request_review_comment {
-    my ($self, $arg) = @_;
+    my $self = shift;
 }
 
 sub pull_request {
-    my ($self, $arg) = @_;
+    my $self = shift;
 }
 
 sub push {
-    my ($self, $arg) = @_;
+    my $self = shift;
 }
 
 sub release {
-    my ($self, $arg) = @_;
+    my $self = shift;
 }
 
 sub status {
-    my ($self, $arg) = @_;
+    my $self = shift;
 }
 
 sub team_add {
-    my ($self, $arg) = @_;
+    my $self = shift;
 }
 
 sub watch {
-    my ($self, $arg) = @_;
+    my $self = shift;
 }
 
 1;
