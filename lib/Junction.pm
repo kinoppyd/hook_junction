@@ -11,8 +11,7 @@ sub startup {
   # Router
   my $r = $self->routes;
 
-  # Normal route to controller
-  $r->get('/')->to('junction');
+  $r->route('/hook/:controller/:action');
 }
 
 1;
