@@ -4,7 +4,7 @@ enum 'HOOK_RECEIVER_DATA_TYPE' => qw/JSON XML/;
 no Mouse::Util::TypeConstraints;
 
 use Mouse::Role;
-use Mojo::JSON;
+use Mojo::JSON qw/j/;
 
 has 'receivedData' => (
     is => 'ro',
