@@ -1,4 +1,4 @@
-package JuncModel::Model::PostSender;
+package Junction::Model::PostSender;
 use Mouse::Role;
 
 requires qw/post/;
