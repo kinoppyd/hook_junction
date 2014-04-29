@@ -27,21 +27,21 @@ has 'attr' => (
 
 sub BUILD {
     my ($self) = @_;
-    parse();
+    $self->parse;
 }
 
 sub parse {
     my ($self) = @_;
 
     if($self->type eq 'JSON'){
-        $self->perse_json();
+        $self->parse_json();
     } elsif ($self->type eq 'XML'){
         $self->parse_xml();
     }
     $self;
 }
 
-sub post_json {
+sub parse_json {
     my ($self) = @_;
     $self->attr( j($self->receivedData) );
 }
