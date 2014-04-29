@@ -5,6 +5,7 @@ use warnings;
 
 use FindBin;
 BEGIN { unshift @INC, "$FindBin::Bin/../lib" }
+BEGIN { unshift @INC, "/local" }
 
 # Start command line interface for application
 require Mojolicious::Commands;
