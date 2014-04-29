@@ -11,7 +11,7 @@ sub startup {
   # Router
   my $r = $self->routes;
 
-  $r->route('/hook/:controller/:action');
+  $r->route('/hook/:controller')->to(action=>'receive');
 }
 
 1;
