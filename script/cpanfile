@@ -1,0 +1,3 @@
+requires 'Mojolicious';
+requires 'Mouse';
+requires 'IO::Socket::SSL';
