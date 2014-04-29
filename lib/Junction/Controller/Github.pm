@@ -15,7 +15,7 @@ sub receive {
         github_event => $github_event
     );
 
-    $self->stash($hook_receiver->attr);
+    $self->stash(payload => $hook_receiver->attr);
     my $post_body = $self->render('chatwork/github', partial =>1);
 
     $self->render(status=>200);
