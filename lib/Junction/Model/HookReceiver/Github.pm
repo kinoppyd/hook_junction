@@ -9,3 +9,5 @@ has 'githubEveng' => (
     init_arg => 'github_event',
     required => 1
 );
+
+1;
