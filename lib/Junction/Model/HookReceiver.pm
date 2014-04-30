@@ -5,6 +5,7 @@ no Mouse::Util::TypeConstraints;
 
 use Mouse::Role;
 use Mojo::JSON qw/j/;
+use Encode qw/encode/;
 
 has 'receivedData' => (
     is => 'ro',
@@ -43,7 +44,7 @@ sub parse {
 
 sub parse_json {
     my ($self) = @_;
-    $self->attr( j($self->receivedData) );
+    $self->attr( j( encode('UTF-8', $self->receivedData) ) );
 }
 
 1;
