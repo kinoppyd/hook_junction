@@ -21,3 +21,4 @@ nytprof.out
 tmp
 local
 *.snapshot
+*.db
